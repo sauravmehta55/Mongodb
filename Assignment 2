@@ -3,7 +3,7 @@ MONGODB -AGGREGATION EXERCISES
 ATLANTA POPULATION
 
 1.use db.zipcodes.find() to filter results where city is atlanta and state is GA.
-db.restaurants.find(
+db.zipcodes.find(
                {$and:
                     [
                        {"city" : "ATLANTA"},
