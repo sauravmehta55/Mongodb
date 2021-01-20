@@ -9,7 +9,7 @@ db.zipcodes.find(
                        {"city" : "ATLANTA"},
                        {"state" : "GA"}
 		    ]
-		    );
+		    });
 
 2.use db.zipcodes.aggregate with $match to do the same as above.
 db.zipcodes.aggregate([{$match: {$and: [{"city": "ATLANTA"}, {"state": "GA"}]}}]);
